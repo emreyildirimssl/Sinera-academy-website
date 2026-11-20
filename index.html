@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sinera Sales Lab Academy · Ölç. Eğit. Sonra tekrar ölç.</title>
+<meta name="description" content="B2B satış ekipleri için yetkinlik ölçümü, eğitim ve gelişim. 36 saha vakası ve 6 satış matematiği sorusuyla ekibinizin gelişim ihtiyaçlarını ölçün.">
+<meta property="og:title" content="Sinera Sales Lab Academy · Ölç. Eğit. Sonra tekrar ölç.">
+<meta property="og:description" content="B2B satış ekipleri için yetkinlik ölçümü, eğitim ve gelişim. 36 saha vakası ve 6 satış matematiği sorusuyla ekibinizin gelişim ihtiyaçlarını ölçün.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<link rel="icon" href="/assets/img/favicon.png">
+<link rel="canonical" href="https://sinerasaleslab.academy/">
+<link rel="preload" href="/assets/fonts/m-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/m-latin-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/m-latin-ext-400.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/m-latin-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/m-latin-ext-500.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/m-latin-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/m-latin-ext-600.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/m-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/m-latin-ext-700.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/i-latin-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/i-latin-ext-500.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+body{margin:0;font-family:'Manrope',system-ui,sans-serif;background:#FFFFFF}
+a{color:#E3000E}a:hover{color:#B0000B}
+*{box-sizing:border-box}
+input,select,textarea,button{font:inherit}
+html{scroll-behavior:smooth}
+img{max-width:100%}
+</style>
+</head>
+<body>
+<div style="font-family: Manrope, system-ui, sans-serif; color: #545454; background: #FFFFFF; font-size: 16px; line-height: 1.6">
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #ECECEC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" aria-label="Sinera Sales Lab Academy" style="text-decoration: none; display: flex; align-items: center; gap: 12px">
+<img src="/assets/img/sinera-logo.png" alt="Sinera Sales Lab" style="height: 52px; width: auto; display: block">
+<span style="padding-left: 12px; border-left: 1px solid #DADADA; font-size: 12px; font-weight: 700; letter-spacing: 0.22em; color: #3E3A39; text-transform: uppercase">Academy</span>
+</a>
+<nav aria-label="Ana menü" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 14px; font-weight: 600">
+<a href="#nasil" style="color: #1A1A1A; text-decoration: none">Nasıl çalışır</a>
+<a href="#yetkinlikler" style="color: #1A1A1A; text-decoration: none">Yetkinlikler</a>
+<a href="#vaka" style="color: #1A1A1A; text-decoration: none">Örnek vaka</a>
+<a href="#kohort" style="color: #1A1A1A; text-decoration: none">Kurucu Firma Programı</a>
+<a href="#basvuru" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 8px; background: #E3000E; color: #FFFFFF; text-decoration: none; font-family: Inter, sans-serif; font-weight: 500">Başvurun</a>
+</nav>
+</div>
+</header>
+
+<section id="top" style="background: #FFFFFF; border-bottom: 1px solid #ECECEC">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 480px; min-width: 0">
+<p style="margin: 0 0 20px; display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: rgba(227, 0, 14, 0.08); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #C0000C">B2B satış ekipleri için yetkinlik ölçümü, eğitim ve gelişim</p>
+<h1 style="margin: 0; font-weight: 700; font-size: clamp(40px, 5vw, 60px); line-height: 1.2; letter-spacing: -0.027em; color: #1A1A1A">Ölç. Eğit.<br>Sonra <span style="color: #E3000E">tekrar ölç.</span></h1>
+<p style="margin: 28px 0 0; font-size: 18px; line-height: 1.6; max-width: 560px">Satış ekibinizde kim hangi yetkinlikte desteğe ihtiyaç duyuyor? 36 saha vakası ve 6 satış matematiği sorusuyla bunu ölçün; eğitim planını sonuçlara göre oluşturun.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px">
+<a href="#basvuru" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 8px; background: #E3000E; color: #FFFFFF; text-decoration: none; font-size: 16px; font-family: Inter, sans-serif; font-weight: 500">Kurucu Firma Programı'na başvurun <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a href="#vaka" style="color: #1A1A1A; font-weight: 700; text-decoration: none; border-bottom: 2px solid #1A1A1A; padding-bottom: 2px">Önce bir vaka deneyin</a>
+</div>
+<div style="margin-top: 44px; display: flex; flex-wrap: wrap; gap: 12px 28px; font-size: 14px; font-weight: 600; color: #3A3A3A">
+<span style="display: inline-flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>Ücretsiz Tam Envanter</span>
+<span style="display: inline-flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>Yalnızca 10 firma</span>
+<span style="display: inline-flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>Son başvuru 31 Aralık 2026</span>
+</div>
+</div>
+
+<div style="flex: 1 1 520px; min-width: 0">
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-radius: 16px; box-shadow: 0 24px 60px rgba(26, 26, 26, 0.10); overflow: hidden">
+<div style="padding: 16px 20px; border-bottom: 1px solid #ECECEC; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<p style="margin: 0; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">Örnek rapor</p>
+<span style="font-size: 12px; color: #8A8A8A"><span data-slide-no>1</span> / 5</span>
+</div>
+<div role="tablist" aria-label="Rapor bölümleri" style="display: flex; flex-wrap: wrap; gap: 6px">
+<dc-region data-r="0" style="display: contents"></dc-region>
+</div>
+</div>
+<div style="padding: 18px 24px 20px; display: grid">
+<div data-panel="0" aria-hidden="false" style="grid-area: 1 / 1; transition: opacity 0.35s ease; opacity: 1; visibility: visible"><p style="margin: 0 0 4px; font-size: 16px; font-weight: 700; color: #1A1A1A">Satıcı A · Saha satış · 6 yıl</p><p style="margin: 0 0 8px; font-size: 13px; color: #6B6B6B">Her yetkinlikte iki ayrı okuma ve bir öneri.</p><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 8px 0"><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Yetkinlik</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Vakada karar</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Sahada</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Öneri</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">İhtiyaç Analizi ve Etkin Soru Sorma</span><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #E3000E"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Gelişmeli</span></div><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #E3000E"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Gelişmeli</span></div><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #E3000E; color: #FFFFFF">Eğitim</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Satış Sunumu ve Değer İletişimi</span><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Yeterli</span></div><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #E3000E"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Gelişmeli</span></div><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #252A34; color: #FFFFFF">Koçluk</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Satış Matematiği</span><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #E3000E"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Gelişmeli</span></div><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Yeterli</span></div><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #E3000E; color: #FFFFFF">Eğitim</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Müzakere ve Taahhüt Alma</span><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Güçlü</span></div><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Yeterli</span></div><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #F1F1F1; color: #545454">Gerekmiyor</span></div></div>
+<div data-panel="1" aria-hidden="true" style="grid-area: 1 / 1; transition: opacity 0.35s ease; opacity: 0; visibility: hidden"><p style="margin: 0 0 4px; font-size: 16px; font-weight: 700; color: #1A1A1A">Yönetici algısı ve ölçülen beceri</p><p style="margin: 0 0 8px; font-size: 13px; color: #6B6B6B">Yöneticinin değerlendirmesi ile vaka sonucu nerede ayrışıyor?</p><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 8px 0"><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Yetkinlik</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Yönetici</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Vakada</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Durum</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Müzakere ve Taahhüt Alma</span><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Güçlü</span></div><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #E3000E"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Gelişmeli</span></div><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: rgba(227, 0, 14, 0.08); color: #C0000C; border: 1px solid rgba(227, 0, 14, 0.25)">Fark var</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Fırsat Değerlendirme ve Nitelendirme</span><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Yeterli</span></div><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #3E3A39"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Yeterli</span></div><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #E8F5EE; color: #1A7F4B">Uyumlu</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Portföy ve Hedef Planlama</span><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #E3000E"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Gelişmeli</span></div><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Güçlü</span></div><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: rgba(227, 0, 14, 0.08); color: #C0000C; border: 1px solid rgba(227, 0, 14, 0.25)">Fark var</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 0.8fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Yakınlık, Güven ve İlişki Geliştirme</span><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Güçlü</span></div><div style="display: flex; flex-direction: column; gap: 6px"><span aria-hidden="true" style="display: inline-flex; gap: 3px"><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span><span style="width: 18px; height: 6px; border-radius: 3px; background: #1A7F4B"></span></span><span style="font-size: 12px; font-weight: 600; color: #545454">Güçlü</span></div><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #E8F5EE; color: #1A7F4B">Uyumlu</span></div></div>
+<div data-panel="2" aria-hidden="true" style="grid-area: 1 / 1; transition: opacity 0.35s ease; opacity: 0; visibility: hidden"><p style="margin: 0 0 4px; font-size: 16px; font-weight: 700; color: #1A1A1A">Ekip özeti · 6 satıcı</p><p style="margin: 0 0 8px; font-size: 13px; color: #6B6B6B">Açık ekibin en az %40'ında ortaksa ekip atölyesi önerilir.</p><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(6, minmax(0, 0.5fr)) minmax(0, 0.7fr); gap: 8px; align-items: center; padding: 8px 0"><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Yetkinlik</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A; text-align: center">S1</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A; text-align: center">S2</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A; text-align: center">S3</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A; text-align: center">S4</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A; text-align: center">S5</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A; text-align: center">S6</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Ortak açık</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(6, minmax(0, 0.5fr)) minmax(0, 0.7fr); gap: 8px; align-items: center; padding: 9px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">İhtiyaç Analizi</span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #E3000E; color: #FFFFFF">%67 → atölye</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(6, minmax(0, 0.5fr)) minmax(0, 0.7fr); gap: 8px; align-items: center; padding: 9px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Değer İletişimi</span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span style="font-size: 12px; font-weight: 700; color: #545454">%33</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(6, minmax(0, 0.5fr)) minmax(0, 0.7fr); gap: 8px; align-items: center; padding: 9px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Müzakere</span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #1A7F4B"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span style="font-size: 12px; font-weight: 700; color: #545454">%17</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(6, minmax(0, 0.5fr)) minmax(0, 0.7fr); gap: 8px; align-items: center; padding: 9px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Satış Matematiği</span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #1A7F4B"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span style="font-size: 12px; font-weight: 700; color: #545454">%33</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(6, minmax(0, 0.5fr)) minmax(0, 0.7fr); gap: 8px; align-items: center; padding: 9px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Fırsat Yönetimi</span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #1A7F4B"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #E3000E"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span aria-hidden="true" style="justify-self: center; width: 22px; height: 22px; border-radius: 6px; background: #C9CDD4"></span><span style="font-size: 12px; font-weight: 700; color: #545454">%17</span></div><div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 16px; font-size: 12px; color: #545454"><span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 12px; height: 12px; border-radius: 3px; background: #E3000E"></span>Gelişmeli</span><span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 12px; height: 12px; border-radius: 3px; background: #C9CDD4"></span>Yeterli</span><span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 12px; height: 12px; border-radius: 3px; background: #1A7F4B"></span>Güçlü</span></div></div>
+<div data-panel="3" aria-hidden="true" style="grid-area: 1 / 1; transition: opacity 0.35s ease; opacity: 0; visibility: hidden"><p style="margin: 0 0 4px; font-size: 16px; font-weight: 700; color: #1A1A1A">Riskli eğilimler · Satıcı A</p><p style="margin: 0 0 8px; font-size: 13px; color: #6B6B6B">Zarar veren hamleyi kaç vakada etkili buldu? 3 ve üzeri bir eğilim olarak raporlanır.</p><div style="display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 16px; align-items: center; padding: 14px 0; border-top: 1px solid #F0F0F0"><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Taviz</span><span style="font-size: 12px; color: #6B6B6B">İstenmeden indirim ya da ödün</span></div><span aria-hidden="true" style="display: flex; gap: 4px"><span style="flex: 1; height: 8px; border-radius: 4px; background: #E3000E"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E3000E"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E3000E"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span></span><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #E3000E; color: #FFFFFF">Eğilim bulgusu</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 16px; align-items: center; padding: 14px 0; border-top: 1px solid #F0F0F0"><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Varsayım</span><span style="font-size: 12px; color: #6B6B6B">Doğrulanmamış bilgiyle hareket</span></div><span aria-hidden="true" style="display: flex; gap: 4px"><span style="flex: 1; height: 8px; border-radius: 4px; background: #3E3A39"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #3E3A39"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #6B6B6B">2 seçenek</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 16px; align-items: center; padding: 14px 0; border-top: 1px solid #F0F0F0"><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Vaat</span><span style="font-size: 12px; color: #6B6B6B">Tutulamayacak söz</span></div><span aria-hidden="true" style="display: flex; gap: 4px"><span style="flex: 1; height: 8px; border-radius: 4px; background: #3E3A39"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #6B6B6B">1 seçenek</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 16px; align-items: center; padding: 14px 0; border-top: 1px solid #F0F0F0"><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Baskı</span><span style="font-size: 12px; color: #6B6B6B">Yapay aciliyet</span></div><span aria-hidden="true" style="display: flex; gap: 4px"><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span><span style="flex: 1; height: 8px; border-radius: 4px; background: #E6E6E6"></span></span><span style="font-size: 12px; font-weight: 600; color: #6B6B6B">0 seçenek</span></div></div>
+<div data-panel="4" aria-hidden="true" style="grid-area: 1 / 1; transition: opacity 0.35s ease; opacity: 0; visibility: hidden"><p style="margin: 0 0 4px; font-size: 16px; font-weight: 700; color: #1A1A1A">Eğitim reçetesi</p><p style="margin: 0 0 8px; font-size: 13px; color: #6B6B6B">Kim, hangi başlıkta, hangi yolla?</p><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 0.9fr); gap: 12px; align-items: center; padding: 8px 0"><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Başlık</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Kimler</span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Yol</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 0.9fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">İhtiyaç Analizi ve Etkin Soru Sorma</span><span style="font-size: 13px; font-weight: 600; color: #3E3A39">Ekip (4/6 satıcı)</span><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #E3000E; color: #FFFFFF">Ekip atölyesi</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 0.9fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Satış Matematiği</span><span style="font-size: 13px; font-weight: 600; color: #3E3A39">S1, S4</span><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #E3000E; color: #FFFFFF">Bireysel eğitim</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 0.9fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Satış Sunumu ve Değer İletişimi</span><span style="font-size: 13px; font-weight: 600; color: #3E3A39">S3</span><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #252A34; color: #FFFFFF">Koçluk</span></div><div style="display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 0.9fr); gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #F0F0F0"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A; line-height: 1.3">Müzakere ve Taahhüt Alma</span><span style="font-size: 13px; font-weight: 600; color: #3E3A39">S3, S5</span><span style="justify-self: start; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; white-space: nowrap; background: #E3000E; color: #FFFFFF">Bireysel eğitim</span></div><div style="margin-top: 12px; padding: 12px 14px; border-radius: 10px; background: #F8F8F8; display: flex; gap: 10px; align-items: center; font-size: 13px; color: #3A3A3A"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg><span><strong style="color: #1A1A1A">Sonra tekrar ölç:</strong> atölyeden sonra aynı yetkinlikler paralel vakalarla yeniden ölçülür.</span></div></div>
+</div>
+<div style="padding: 12px 24px; background: #252A34; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; font-size: 12px; color: #C9CDD4">
+<span>Temsilî örnektir, gerçek veri değildir.</span>
+<span style="display: inline-flex; gap: 6px" aria-hidden="true">
+<dc-region data-r="1" style="display: contents"></dc-region>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: #F8F8F8">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px">
+<div style="max-width: 760px; margin: 0 auto; text-align: center">
+<p style="margin: 0 0 12px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">Sorun</p>
+<h2 style="margin: 0; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.2; letter-spacing: -0.027em; color: #1A1A1A">Hangi satıcının hangi <span style="color: #E3000E">eğitime</span> ihtiyacı var?</h2>
+<p style="margin: 20px 0 0">Satış eğitimleri çoğu zaman ekibin tamamına aynı başlıklarla sunulur. Oysa benzer sonuçların arkasında farklı sorunlar olabilir.</p>
+</div>
+<div style="margin-top: 56px; overflow-x: auto"><div style="min-width: 760px; display: flex; flex-direction: column; gap: 14px"><div style="display: grid; grid-template-columns: minmax(0, 0.9fr) 28px minmax(0, 1.3fr) 28px minmax(0, 1.2fr); gap: 12px; align-items: stretch; padding: 0 4px"><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Görünen</span><span></span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Ölçümün gösterdiği neden</span><span></span><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #8A8A8A">Doğru yanıt</span></div><div style="display: grid; grid-template-columns: minmax(0, 0.9fr) 28px minmax(0, 1.3fr) 28px minmax(0, 1.2fr); gap: 12px; align-items: stretch">
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A">Satıcı A</span><span style="font-size: 14px; font-weight: 400; color: #545454; line-height: 1.6">Teklifleri kaybediyor</span></div>
+<span aria-hidden="true" style="display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5B5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 16px; font-weight: 600; color: #1A1A1A; line-height: 1.5">İhtiyaç analizini eksik yapar.</span><span style="font-size: 14px; font-weight: 400; color: #545454; line-height: 1.6">Müşterinin asıl sorununu ortaya çıkarmadan teklife geçiyor.</span></div>
+<span aria-hidden="true" style="display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5B5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-left: 4px solid #E3000E; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; justify-content: center"><span style="align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: #E3000E; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase">Eğitim</span><span style="font-size: 16px; font-weight: 600; color: #1A1A1A; line-height: 1.5">İhtiyaç Analizi ve Etkin Soru Sorma</span></div>
+</div><div style="display: grid; grid-template-columns: minmax(0, 0.9fr) 28px minmax(0, 1.3fr) 28px minmax(0, 1.2fr); gap: 12px; align-items: stretch">
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A">Satıcı B</span><span style="font-size: 14px; font-weight: 400; color: #545454; line-height: 1.6">Teklifleri kaybediyor</span></div>
+<span aria-hidden="true" style="display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5B5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 16px; font-weight: 600; color: #1A1A1A; line-height: 1.5">Müşterinin ihtiyacını doğru anlar, ancak değeri anlatmakta zorlanır.</span><span style="font-size: 14px; font-weight: 400; color: #545454; line-height: 1.6">Doğru ihtiyacı buluyor, değeri müşterinin diliyle kuramıyor.</span></div>
+<span aria-hidden="true" style="display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5B5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-left: 4px solid #E3000E; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; justify-content: center"><span style="align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: #E3000E; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase">Eğitim</span><span style="font-size: 16px; font-weight: 600; color: #1A1A1A; line-height: 1.5">Satış Sunumu ve Değer İletişimi</span></div>
+</div><div style="display: grid; grid-template-columns: minmax(0, 0.9fr) 28px minmax(0, 1.3fr) 28px minmax(0, 1.2fr); gap: 12px; align-items: stretch">
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 14px; font-weight: 700; color: #1A1A1A">Satıcı C</span><span style="font-size: 14px; font-weight: 400; color: #545454; line-height: 1.6">Teklifleri kaybediyor</span></div>
+<span aria-hidden="true" style="display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5B5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 16px; font-weight: 600; color: #1A1A1A; line-height: 1.5">Ne yapması gerektiğini bilir, fakat bunu sahada düzenli olarak uygulamaz.</span><span style="font-size: 14px; font-weight: 400; color: #545454; line-height: 1.6">Vakalarda doğru kararı veriyor; sahada tutarlı uygulamıyor.</span></div>
+<span aria-hidden="true" style="display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5B5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-left: 4px solid #252A34; border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; justify-content: center"><span style="align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: #252A34; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase">Eğitim değil</span><span style="font-size: 16px; font-weight: 600; color: #1A1A1A; line-height: 1.5">Koçluk ya da satış sürecinde düzenleme</span></div>
+</div></div></div>
+<p style="margin: 56px auto 0; max-width: 760px; text-align: center; font-size: 18px; font-weight: 600; color: #1A1A1A">Hangi satıcının hangi konuda zorlandığını bilmeden doğru eğitimi seçmek zorlaşır. Envanter, bu ayrımı görünür kılmak için tasarlandı.</p>
+</div>
+</section>
+
+<section id="nasil" style="background: #252A34; color: rgba(248, 248, 248, 0.82)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 96px">
+<div style="max-width: 760px; margin: 0 auto; text-align: center">
+<p style="margin: 0 0 12px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255, 255, 255, 0.55)">Nasıl çalışır</p>
+<h2 style="margin: 0; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.2; letter-spacing: -0.027em; color: #FFFFFF">Önce <span style="color: #FF3B45">sonuçları</span> görün, sonra eğitim planını kurun</h2>
+</div>
+<div style="margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
+<div style="background: #2D3242; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 6px; background: #E3000E; color: #FFFFFF; font-size: 10px; font-weight: 700; letter-spacing: 1.2px">ADIM 1</span>
+<h3 style="margin: 4px 0 0; font-size: 34px; font-weight: 500; color: #FFFFFF; letter-spacing: -0.038em; line-height: 1.2">Ölçün</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6">Satıcılarınız çevrim içi envanteri iki oturumda tamamlar: 13 yetkinliği kapsayan 36 saha vakası ve 6 satış matematiği sorusu. Siz de her satıcıyı aynı 13 yetkinlikte, davranış örnekleri üzerinden değerlendirirsiniz.</p>
+</div>
+<div style="background: #2D3242; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 6px; background: #E3000E; color: #FFFFFF; font-size: 10px; font-weight: 700; letter-spacing: 1.2px">ADIM 2</span>
+<h3 style="margin: 4px 0 0; font-size: 34px; font-weight: 500; color: #FFFFFF; letter-spacing: -0.038em; line-height: 1.2">Sonuçları karşılaştırın</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6">Her satıcı için iki sonucu yan yana görürsünüz:</p>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 10px; align-items: flex-start"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; margin-top: 10px; border-radius: 50%; background: #FF3B45"></span><span style="font-size: 16px; line-height: 1.6">Vakalarda etkili ve zararlı kararları ayırt edebiliyor mu?</span></div>
+<div style="display: flex; gap: 10px; align-items: flex-start"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; margin-top: 10px; border-radius: 50%; background: #FF3B45"></span><span style="font-size: 16px; line-height: 1.6">Sizin değerlendirmenize göre bu davranışları sahada uyguluyor mu?</span></div>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6">Vaka sonuçlarıyla yönetici değerlendirmesi arasındaki farklar ayrıca gösterilir. Taviz, vaat ve baskı gibi riskli eğilimler ayrı bulgu olarak raporlanır.</p>
+</div>
+<div style="background: #2D3242; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 6px; background: #E3000E; color: #FFFFFF; font-size: 10px; font-weight: 700; letter-spacing: 1.2px">ADIM 3</span>
+<h3 style="margin: 4px 0 0; font-size: 34px; font-weight: 500; color: #FFFFFF; letter-spacing: -0.038em; line-height: 1.2">Eğitimi ihtiyaca göre planlayın</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6">Karar açığı görülen yetkinlikler için ilgili eğitim başlıkları önerilir. Ne yapması gerektiğini bildiği hâlde sahada yapmayan satıcılar için eğitim yerine koçluk ya da satış sürecinde düzenleme daha uygun olabilir.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6">Ekip atölyeleri yalnızca ekibin en az %40'ında görülen ortak gelişim ihtiyaçları için önerilir.</p>
+</div>
+</div>
+<div style="margin-top: 40px; padding: 24px 28px; border-radius: 12px; border: 1px solid rgba(255, 59, 69, 0.45); background: rgba(227, 0, 14, 0.1); display: flex; gap: 16px; align-items: center">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF3B45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+<p style="margin: 0; font-size: 20px; font-weight: 700; line-height: 1.35; color: #FFFFFF; letter-spacing: -0.027em">Her gelişim ihtiyacının çözümü eğitim değildir. Rapor, bu ayrımı da gösterir.</p>
+</div>
+</div>
+</section>
+
+<section id="yetkinlikler" style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 24px 64px; align-items: flex-end">
+<div style="flex: 1 1 460px">
+<p style="margin: 0 0 12px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">13 yetkinlik</p>
+<h2 style="margin: 0; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.2; letter-spacing: -0.027em; color: #1A1A1A">Her yetkinliğin karşılığında bir <span style="color: #E3000E">atölye</span> başlığı var</h2>
+</div>
+<p style="margin: 0; flex: 1 1 400px">13 yetkinliğin her biri bir çevrim içi atölye başlığına karşılık gelir. Ancak bu atölyelerin tamamını ekibinize önermeyiz. Rapor, hangi eğitimin kimin için ve neden gerekli olduğunu gösterir.</p>
+</div>
+<div style="margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+<div style="background: #F8F8F8; border: 1px solid #ECECEC; border-radius: 14px; padding: 24px">
+<h3 style="margin: 0 0 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">Portföy ve Fırsat Yaratma</h3>
+<div style="display: flex; flex-direction: column; gap: 18px; font-size: 16px; line-height: 1.4; color: #1A1A1A; font-weight: 700">
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">01</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Portföy ve Hedef Planlama</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Dönem hedefini hesap bazlı öngörülere çevirir, müşterileri kanıta göre önceliklendirir, zamanını beklenen getiriye göre planlar.</span></span></div>
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">02</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Yeni Müşteri Kazanma ve Randevu Alma</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Temas nedeni güçlü adayları seçer, onların gündemiyle ilk teması kurar ve yanıtı anlamlı bir görüşmeye dönüştürür.</span></span></div>
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">03</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Fırsat Değerlendirme ve Nitelendirme</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Problem, aciliyet, karar ve finansman kanıtını tartar; kanıtı yetersiz fırsatlara ayırdığı kaynağı sınırlar.</span></span></div>
+</div>
+</div>
+<div style="background: #F8F8F8; border: 1px solid #ECECEC; border-radius: 14px; padding: 24px">
+<h3 style="margin: 0 0 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">Keşif, Paydaş ve İş Bilgisi</h3>
+<div style="display: flex; flex-direction: column; gap: 18px; font-size: 16px; line-height: 1.4; color: #1A1A1A; font-weight: 700">
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">04</span><span style="display: flex; flex-direction: column; gap: 4px"><span>İhtiyaç Analizi ve Etkin Soru Sorma</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Mevcut durumu, ulaşılmak istenen sonucu ve değişim ihtiyacını sorularla açığa çıkarır; anlayışını müşteriye doğrulatır.</span></span></div>
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">05</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Karar Vericilere Ulaşma ve Paydaş Yönetimi</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Kararı biçimlendiren kişileri haritalar, erişim yolu kurar, farklı beklentileri ortak bir karar zemininde buluşturur.</span></span></div>
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">06</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Pazar, Rakip ve Müşteri İşi Bilgisi</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Müşterinin ekonomisini ve gerçek alternatiflerini kanıta dayanarak yorumlar; yorumunu kullanmadan önce müşteriyle sınar.</span></span></div>
+</div>
+</div>
+<div style="background: #F8F8F8; border: 1px solid #ECECEC; border-radius: 14px; padding: 24px">
+<h3 style="margin: 0 0 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">Değer, İkna ve Müzakere</h3>
+<div style="display: flex; flex-direction: column; gap: 18px; font-size: 16px; line-height: 1.4; color: #1A1A1A; font-weight: 700">
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">07</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Satış Sunumu ve Değer İletişimi</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Değeri dinleyicinin karar ölçütüne göre kurgular, iddialarını kanıtla destekler, sunumu gelen tepkiye göre uyarlar.</span></span></div>
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">08</span><span style="display: flex; flex-direction: column; gap: 4px"><span>İknanın Psikolojisi ve İtirazları Karşılama</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Çekincenin kaynağını anlar; baskı ya da yapay aciliyet yaratmadan kanıta dayalı bir yanıt verir.</span></span></div>
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">09</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Müzakere ve Taahhüt Alma</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Teklifleri eşit koşulda karşılaştırır, her ödünü karşılıklı bir taahhüde bağlar, anlaşmayı tarihli aksiyonlarla tamamlar.</span></span></div>
+</div>
+</div>
+<div style="background: #F8F8F8; border: 1px solid #ECECEC; border-radius: 14px; padding: 24px">
+<h3 style="margin: 0 0 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">Fırsat ve Çalışma Yönetimi</h3>
+<div style="display: flex; flex-direction: column; gap: 18px; font-size: 16px; line-height: 1.4; color: #1A1A1A; font-weight: 700">
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">10</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Fırsat Yönetimi ve Satış Problemi Çözümü</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">İlerlemeyi müşteri kanıtıyla izler, tıkanmanın kaynağını bulur, satış tahminini kanıta göre günceller.</span></span></div>
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">11</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Satış Matematiği</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Hedef, dönüşüm, marj, indirim, vade ve müşteri değeri hesaplarını doğru kurar; kararlarını bu hesaplarla gerekçelendirir.</span></span></div>
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">12</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Çalışma Düzeni ve Aksiyon Planlama</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Kritik zaman bloklarını korur, taahhütlerini düzenli izler, sonuçlara göre çalışma yaklaşımını düzeltir.</span></span></div>
+</div>
+</div>
+<div style="background: #F8F8F8; border: 1px solid #ECECEC; border-radius: 14px; padding: 24px">
+<h3 style="margin: 0 0 16px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">İlişki ve Güven</h3>
+<div style="display: flex; flex-direction: column; gap: 18px; font-size: 16px; line-height: 1.4; color: #1A1A1A; font-weight: 700">
+<div style="display: flex; gap: 10px"><span style="color: #9A9A9A; font-weight: 700; min-width: 20px">13</span><span style="display: flex; flex-direction: column; gap: 4px"><span>Yakınlık, Güven ve İlişki Geliştirme</span><span style="font-size: 13px; font-weight: 500; line-height: 1.45; color: #6B6B6B">Müşterinin bağlamına uyum gösterir, müşteri ve şirket yararını dengeler, satış dışı dönemlerde de değerli temas sürdürür.</span></span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="vaka" style="background: #F8F8F8">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px">
+<div style="max-width: 760px; margin: 0 auto; text-align: center">
+<p style="margin: 0 0 12px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">Örnek vaka</p>
+<h2 style="margin: 0; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.2; letter-spacing: -0.027em; color: #1A1A1A">Bir <span style="color: #E3000E">vaka</span> deneyin</h2>
+<p style="margin: 20px 0 0">Bir müşteri görüşmesinin sonunda farklı biçimlerde konuşabilirsiniz. Bu örnekte beş hamlenin her birini ayrı ayrı değerlendirin. Amaç yalnızca en etkili yanıtı bulmak değil; etkisiz ve ters etki yapacak yanıtları da ayırt etmek.</p>
+<p style="margin: 8px 0 0; font-size: 14px; color: #6B6B6B">Bu örnek vaka envanterde yer almaz.</p>
+</div>
+
+<div style="margin: 48px auto 0; max-width: 960px; background: #FFFFFF; border: 1px solid #ECECEC; border-radius: 16px; padding: clamp(24px, 4vw, 48px); box-shadow: 0 12px 40px rgba(26, 26, 26, 0.06)">
+<p style="margin: 0 0 16px; display: inline-flex; padding: 4px 10px; border-radius: 6px; background: rgba(227, 0, 14, 0.08); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #C0000C">Vaka · İhtiyaç Analizi ve Etkin Soru Sorma</p>
+<div style="font-size: 18px; line-height: 1.65; color: #3E3A39">
+<p style="margin: 0 0 12px">İnşaat firmasının ekipman müdürü Oya Hanım'la ihtiyaç görüşmesinin sonundasınız. Görüşmeye "Bize 3 yeni jeneratör lazım" diye başladı.</p>
+<p style="margin: 0 0 12px">Konuşma boyunca şunları anlattı: Geçen çeyrek iki şantiyede jeneratör arızası nedeniyle gecikme yaşandı. Bir işveren 1,2 milyon TL ceza kesti. Yönetim kurulu konuyu kendisine sordu. Filoda ortalama 9 yaşında 8 jeneratör var; arıza dönemlerinde kiralık jeneratör kullanıyorlar.</p>
+<p style="margin: 0; font-weight: 700; color: #1A1A1A">Şimdi görüşmeyi özetleyeceksiniz.</p>
+</div>
+<p style="margin: 32px 0 16px; font-size: 14px; font-weight: 600; color: #6B6B6B">Her hamleyi değerlendirin: Çok etkili · Etkili · Etkisiz · Ters etki yapar</p>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<dc-region data-r="2" style="display: contents"></dc-region>
+</div>
+
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px">
+<dc-region data-r="3" style="display: contents"></dc-region>
+<dc-region data-r="4" style="display: contents"></dc-region>
+</div>
+
+<dc-region data-r="5" style="display: contents"></dc-region>
+</div>
+</div>
+</section>
+
+<section id="kohort" style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 1 1 440px; min-width: 0">
+<p style="margin: 0 0 16px; display: inline-flex; padding: 6px 12px; border-radius: 999px; background: rgba(227, 0, 14, 0.08); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #C0000C">Son başvuru 31 Aralık 2026</p>
+<h2 style="margin: 0; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.2; letter-spacing: -0.027em; color: #1A1A1A">Kurucu <span style="color: #E3000E">Firma Programı:</span> 10 firmaya ücretsiz Tam Envanter</h2>
+<p style="margin: 20px 0 0">Envanterin ilk kurumsal uygulamasını 10 firmayla yapıyoruz. Seçilen firmalar, satış ekipleri için Tam Envanter ve Yönetici Değerlendirmesi'nden ücretsiz yararlanır.</p>
+
+<h3 style="margin: 40px 0 14px; font-size: 18px; font-weight: 700; color: #1A1A1A; letter-spacing: -0.027em; line-height: 1.25">Neler alacaksınız?</h3>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 12px; align-items: flex-start"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg><span>En fazla 8 satıcı için Tam Envanter: 36 vaka ve 6 hesap sorusu, iki oturum</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg><span>Her satıcı için yönetici değerlendirmesi</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg><span>Satıcı bazında rapor ve ekip özeti</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg><span>Atölye sonrası tekrar ölçüm: atölyesini aldığınız yetkinlikler paralel vakalarla yeniden ölçülür; reçetenin tamamını alan firmalarda Tam Envanter yenilenir</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg><span>Sonuçları ve eğitim önerilerini konuşmak için Emre Yildirim'le 45 dakikalık görüşme</span></div>
+</div>
+
+<h3 style="margin: 32px 0 14px; font-size: 18px; font-weight: 700; color: #1A1A1A; letter-spacing: -0.027em; line-height: 1.25">Sizden istediklerimiz</h3>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 12px; align-items: flex-start"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; margin: 11px 7px 0; border-radius: 50%; background: #1A1A1A"></span><span>Sonuçların firma ve kişi adı belirtilmeden, toplu veri olarak kullanılmasına izin vermeniz</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; margin: 11px 7px 0; border-radius: 50%; background: #1A1A1A"></span><span>Her satıcı için yönetici değerlendirmesine zaman ayırmanız: satıcı başına yaklaşık 10 dakika</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; margin: 11px 7px 0; border-radius: 50%; background: #1A1A1A"></span><span>Çalışmadan memnun kalırsanız referans olmanız</span></div>
+</div>
+
+<h3 style="margin: 32px 0 14px; font-size: 18px; font-weight: 700; color: #1A1A1A; letter-spacing: -0.027em; line-height: 1.25">Kimler başvurabilir?</h3>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 12px; align-items: flex-start"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; margin: 11px 7px 0; border-radius: 50%; background: #1A1A1A"></span><span>Üretim, endüstriyel dağıtım veya B2B hizmet alanında çalışan firmalar</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; margin: 11px 7px 0; border-radius: 50%; background: #1A1A1A"></span><span>En az 5 kişilik saha veya iç satış ekibi olan firmalar</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; margin: 11px 7px 0; border-radius: 50%; background: #1A1A1A"></span><span>Başvurunun satış ekibinden sorumlu yönetici veya genel müdür tarafından yapılması</span></div>
+</div>
+
+<h3 style="margin: 32px 0 14px; font-size: 18px; font-weight: 700; color: #1A1A1A; letter-spacing: -0.027em; line-height: 1.25">Başvuruları nasıl değerlendiriyoruz?</h3>
+<p style="margin: 0">Her başvuruyu tek tek inceliyor ve 10 firmayı seçiyoruz. Sonucu en geç 5 iş günü içinde e-postayla bildiriyoruz. Uygulama takvimini seçilen firmalarla birlikte planlıyoruz.</p>
+</div>
+
+<div id="basvuru" style="flex: 1 1 440px; min-width: 0">
+<div style="background: #FFFFFF; border: 1px solid #ECECEC; border-top: 4px solid #E3000E; border-radius: 16px; padding: clamp(24px, 3vw, 40px); box-shadow: 0 12px 40px rgba(26, 26, 26, 0.08)">
+<div data-form-wrap>
+<form id="application-form" novalidate style="display: flex; flex-direction: column; gap: 18px">
+<h3 style="margin: 0 0 4px; font-size: 26px; font-weight: 700; color: #1A1A1A; letter-spacing: -0.027em; line-height: 1.25">Başvuru formu</h3>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-name" style="font-size: 14px; font-weight: 700; color: #1A1A1A">Ad soyad</label>
+<input id="f-name" name="name" type="text" required="required" autocomplete="name" style="min-height: 48px; padding: 10px 14px; border: 1px solid #C8C8C8; border-radius: 8px; background: #FFFFFF; color: #1A1A1A">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-company" style="font-size: 14px; font-weight: 700; color: #1A1A1A">Şirket</label>
+<input id="f-company" name="company" type="text" required="required" autocomplete="organization" style="min-height: 48px; padding: 10px 14px; border: 1px solid #C8C8C8; border-radius: 8px; background: #FFFFFF; color: #1A1A1A">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-role" style="font-size: 14px; font-weight: 700; color: #1A1A1A">Unvanınız</label>
+<input id="f-role" name="role" type="text" required="required" autocomplete="organization-title" style="min-height: 48px; padding: 10px 14px; border: 1px solid #C8C8C8; border-radius: 8px; background: #FFFFFF; color: #1A1A1A">
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-team" style="font-size: 14px; font-weight: 700; color: #1A1A1A">Satış ekibinizin büyüklüğü</label>
+<select id="f-team" name="team_size" required="required" style="min-height: 48px; padding: 10px 14px; border: 1px solid #C8C8C8; border-radius: 8px; background: #FFFFFF; color: #1A1A1A">
+<option value="">Seçin</option>
+<option>5–9</option>
+<option>10–24</option>
+<option>25–49</option>
+<option>50–100</option>
+<option>100+</option>
+</select>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-sector" style="font-size: 14px; font-weight: 700; color: #1A1A1A">Sektör</label>
+<select id="f-sector" name="sector" required="required" style="min-height: 48px; padding: 10px 14px; border: 1px solid #C8C8C8; border-radius: 8px; background: #FFFFFF; color: #1A1A1A">
+<option value="">Seçin</option>
+<option>Üretim</option>
+<option>Endüstriyel dağıtım</option>
+<option>B2B hizmet</option>
+<option>Diğer</option>
+</select>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-email" style="font-size: 14px; font-weight: 700; color: #1A1A1A">İş e-postanız</label>
+<input id="f-email" name="email" type="email" required="required" autocomplete="email" style="min-height: 48px; padding: 10px 14px; border: 1px solid #C8C8C8; border-radius: 8px; background: #FFFFFF; color: #1A1A1A">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-phone" style="font-size: 14px; font-weight: 700; color: #1A1A1A">Telefon</label>
+<input id="f-phone" name="phone" type="tel" required="required" autocomplete="tel" style="min-height: 48px; padding: 10px 14px; border: 1px solid #C8C8C8; border-radius: 8px; background: #FFFFFF; color: #1A1A1A">
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-note" style="font-size: 14px; font-weight: 700; color: #1A1A1A">Ekibinizle ilgili en çok neyi merak ediyorsunuz? <span style="font-weight: 500; color: #6B6B6B">(isteğe bağlı)</span></label>
+<textarea id="f-note" name="note" maxlength="300" rows="3" style="padding: 10px 14px; border: 1px solid #C8C8C8; border-radius: 8px; background: #FFFFFF; color: #1A1A1A; resize: vertical"></textarea>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<input id="f-privacy" name="privacy" type="checkbox" required="required" style="width: 22px; height: 22px; margin: 2px 0 0; flex: 0 0 auto; accent-color: #E3000E">
+<label for="f-privacy" style="font-size: 14px; line-height: 1.5; color: #3A3A3A"><a href="/gizlilik/" style="font-weight: 700">Gizlilik ve KVKK Aydınlatma Metni</a>'ni okudum.</label>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<input id="f-followup" name="followup_consent" type="checkbox" style="width: 22px; height: 22px; margin: 2px 0 0; flex: 0 0 auto; accent-color: #E3000E">
+<label for="f-followup" style="font-size: 14px; line-height: 1.5; color: #3A3A3A">İsteğe bağlı: Programa seçilmezsem, Ocak 2027'de başlayan ücretsiz Ekip Taraması hakkında benimle e-posta veya telefonla iletişime geçilebilir. Bu onayı istediğim zaman geri alabilirim.</label>
+</div>
+<div aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden"><label for="f-website">Web sitesi</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+<p data-form-error role="alert" hidden style="margin: 0; padding: 12px 14px; border-radius: 8px; background: rgba(227, 0, 14, 0.08); color: #C0000C; font-size: 14px"></p>
+<button type="submit" style="min-height: 52px; padding: 0 28px; border: 0; border-radius: 8px; background: #E3000E; color: #FFFFFF; font-size: 16px; cursor: pointer; font-family: Inter, sans-serif; font-weight: 500">Başvuruyu gönder</button>
+</form>
+</div>
+<div data-form-ok hidden>
+<div role="status" style="display: flex; flex-direction: column; gap: 12px; padding: 16px 0">
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E3000E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+<h3 style="margin: 0; font-size: 26px; font-weight: 700; color: #1A1A1A; letter-spacing: -0.027em; line-height: 1.25">Başvurunuz bize ulaştı.</h3>
+<p style="margin: 0">İnceleyip en geç 5 iş günü içinde e-postayla size döneceğiz.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: #F8F8F8">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px">
+<p style="margin: 0 0 12px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E3000E">Envanterin arkasında</p>
+<h2 style="margin: 0; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.2; letter-spacing: -0.027em; color: #1A1A1A">Neden bu envanteri <span style="color: #E3000E">hazırladık?</span></h2>
+<div style="margin-top: 48px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<img src="/assets/img/emre-yildirim.jpg" alt="Emre Yildirim" style="flex: 0 1 340px; width: 340px; max-width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px">
+<div style="flex: 1 1 460px; min-width: 0">
+<blockquote style="margin: 0; padding-left: 0; font-size: 26px; font-weight: 700; line-height: 1.35; letter-spacing: -0.027em; color: #1A1A1A">"Bir ekibe hangi eğitimi vereceğimize karar vermeden önce, insanların neyi bildiğini ve sahada neyi uyguladığını görmek isterim."</blockquote>
+<p style="margin: 28px 0 2px; font-weight: 700; color: #1A1A1A">Emre Yildirim</p>
+<p style="margin: 0 0 24px; font-size: 16px; color: #E3000E; font-weight: 700">Kurucu</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0">1997'den bu yana B2B satışın içinde. Migros Türk'te toptan satış müdürü, Umur Basım'da satıştan sorumlu genel müdür yardımcısı olarak çalıştı.</p>
+<p style="margin: 0">2010'da Sinera Sales Lab'i kurdu. Önce satış eğitimi içerikleri tasarlayıp uyguladı; ardından şirketlerin satış süreçleri ve CRM sistemleri üzerine danışmanlık yaptı.</p>
+<p style="margin: 0"><em>Satışta Doğru Zannedilen 30 Yanlış</em> ve <em>The Architecture of Sales Systems</em> (2026) kitaplarının yazarı. Dört Salesforce sertifikası bulunuyor. Bilkent Üniversitesi Uluslararası İlişkiler mezunu.</p>
+</div>
+<a href="https://linkedin.com/in/yildirimemre" style="margin-top: 24px; display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 8px; border: 1px solid #252A34; color: #252A34; text-decoration: none; font-weight: 700">LinkedIn profili</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="background: #1A1D21; color: #A7ABB3">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; font-size: 14px; line-height: 1.6">
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="margin: 0 0 16px; display: inline-flex; align-items: center; gap: 12px; padding: 8px 14px; background: #FFFFFF; border-radius: 10px"><img src="/assets/img/sinera-logo.png" alt="Sinera Sales Lab" style="height: 44px; width: auto; display: block"><span style="padding-left: 12px; border-left: 1px solid #DADADA; font-size: 11px; font-weight: 700; letter-spacing: 0.22em; color: #3E3A39; text-transform: uppercase">Academy</span></div>
+<p style="margin: 0">Sinera Sales Lab Academy, bir <a href="https://www.sinerasaleslab.com" style="color: #FFFFFF; font-weight: 600">Sinera Sales Lab</a> markasıdır.</p>
+<p style="margin: 8px 0 0">Suite 201, 51 Pinfold Street, Birmingham B2 4AY, United Kingdom</p>
+</div>
+<div style="flex: 0 1 320px; display: flex; flex-direction: column; gap: 8px">
+<a href="mailto:iletisim@sinerasaleslab.academy" style="color: #FFFFFF">iletisim@sinerasaleslab.academy</a>
+<a href="/gizlilik/" style="color: #FFFFFF">Gizlilik ve KVKK Aydınlatma Metni</a>
+<a href="https://envanter.sinerasaleslab.academy" style="color: #FFFFFF">Katılımcı girişi</a>
+<span>© 2026 Emre Yildirim · Sinera Sales Lab Academy</span>
+</div>
+</div>
+</footer>
+
+</div>
+<script src="/assets/logic.js"></script>
+<script src="/assets/app.js"></script>
+</body>
+</html>

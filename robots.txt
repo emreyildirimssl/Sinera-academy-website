@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sinerasaleslab.academy/sitemap.xml
