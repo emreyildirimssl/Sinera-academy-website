@@ -3,7 +3,8 @@
 (function () {
   'use strict';
 
-  var SUPABASE_URL = 'https://lznuccgxjjonbjbhdzup.supabase.co';
+  // Same-origin proxy (vercel.json rewrite), so a regional block of *.supabase.co does not stop the form.
+  var SUPABASE_URL = '/sb';
   var SUPABASE_KEY = 'sb_publishable_oHrQgz8SfAD3eJuW8q9fRg_VQJK1hcX';
 
   // ---- minimal DCLogic shim ----
