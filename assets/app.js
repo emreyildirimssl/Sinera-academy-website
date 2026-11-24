@@ -135,7 +135,7 @@
       followup_consent: !!fd.get('followup_consent')
     };
     btn.disabled = true; var label = btn.textContent; btn.textContent = 'Gönderiliyor…';
-    fetch(SUPABASE_URL + '/rest/v1/site_applications', {
+    fetch(SUPABASE_URL + '/rest/v1/site_applications/', { // trailing slash: the site redirects slash-less paths
       method: 'POST',
       headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY, Prefer: 'return=minimal' },
       body: JSON.stringify(payload)

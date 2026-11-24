@@ -35,7 +35,7 @@
   ],
   "rewrites": [
     {
-      "source": "/sb/rest/v1/site_applications",
+      "source": "/sb/rest/v1/site_applications/",
       "destination": "https://lznuccgxjjonbjbhdzup.supabase.co/rest/v1/site_applications"
     }
   ]
